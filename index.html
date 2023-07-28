@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Generate a</h2> 
+                <h2 class="head">random password</h2>
+            </div>
+            <p class="never">Never use an insecure password again.</p>
+            <div class="passlength">
+                <label for="passlength">Enter length of password : </label>
+                <input onchange="window.location.reload();" type="number" id="passlength">
+            </div>
+           
+            <div class="checkboxes">
+                <input type="checkbox" id="withoutnumbers" name="withoutnumbers" value="withoutnumbers">
+                <label for="withoutnumbers">Without Numbers</label>
+                <input type="checkbox" id="withoutsymboles" name="withoutsymboles" value="withoutsymboles">
+                <label for="withoutsymboles">Without Symbols</label>
+            </div>
+
+            <button class="button-28" onclick="GeneratePassword()" class="GeneratePassword">Generate passwords</button>
+            <hr>
+            <div class="password">
+                <h2 id="pass1"></h2>
+            </div>
+            <div class="password password2">
+                <h2 id="pass2"></h2>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
